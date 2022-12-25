@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="logo"><p>a</p></div>
+<div class="container">
+    
+    <div class="containerTexto">
+        <div class="textArea"><textarea name="" id="texto" cols="30" rows="10" class="texto"  placeholder="Digite seu texto"></textarea></div>
+        <div class="botaoTextArea">
+            <button type="button" class="criptografar" onclick="cripografar('texto')">Criptografar</button>
+            <button type="button" class="descriptografar" onclick="descriptografar('texto')">Descriptografar</button>
+        </div>
+    </div>
+    <div class="containerResultadoTexto empy " id="resultadoVazio">
+        <div class="resultadoVazio">
+            <div class="img"><img src="img/High quality products 1 1.svg" alt=""></div>
+            <div class="titulo"><h3>Nenhuma mensagem encontrada</h3></div>
+            <div class="paragrafo"><p>Digite um texto que você deseja criptografar ou descriptografar.</p></div>
+        </div>
+    </div>
+    <div class="containerResultadoTexto " id="comResultado">
+        <div class="resultado">
+            <div class="resultadoTextoArea"><textarea name="" id="resultado"  class="textoResultado" ></textarea></div>
+            <div class="copiar"><button type="button" onclick="copiar('resultado')">Copiar </button></div>
+            
+        </div>
+       
+    </div>
+   
+
+</div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
