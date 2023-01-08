@@ -2,251 +2,222 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-
-body{
-    position: relative;
-}
-.logo p{
-    position: absolute;
-    left: 5%;
-    top: 5%;
-    bottom: 0%;
-    /* Dark blue/dark-blue-300 */
-    color: #0A3871;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-}
-.container{
-    background-color: #E5E5E5;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
     
 }
-.containerTexto{
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F3F5FC;
+
+}
+.container{
+    display: flex;
+    height: 100%;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container section{
+    /*margin: 20px;*/
+    padding: 20px;
+}
+.container .textInsert{
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-    width: 680px;
-    margin-right: 100px;
-    
+    align-items: center;
+}
+.textInsert .textArea textarea{
+   resize: none;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 32px;
+   color: #0A3871;
 }
 
-.texto{
-    width: 680px;
+.textInsert .textArea textarea{
+    width: 400px;
+    min-height: 300px;
+}
+.textInsert .botaoTextArea{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.textInsert .botaoTextArea button{
+   width: 328px;
+   height: 67px;
+   background: #0A3871;
+   border-radius: 24px;
+   color: white;
+   font-family: 'Inter';
+   font-style: normal;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
+   border: 1px solid black;
+
+}
+.textInsert .botaoTextArea button:last-child{
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border: 1px solid black;
+ 
+ }
+.container .containerResultadoTexto{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 80%;
+    border-radius: 30px;
+}
+.containerResultadoTexto .resultadoVazio{
+    display: flex;
+    border-radius: 30px;
+    padding: 10px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.resultadoVazio .img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.containerResultadoTexto {
+
+    width: 20%;
+}
+
+.containerResultadoTexto .resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    
+
+}
+
+.resultado .resultadoTextoArea{
+    height: 50%;
+    width: 100%;
+}
+.resultadoTextoArea textarea{
+    width: 100%;
+    height: 100%;
     resize: none;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    padding: 50px;
+    line-height: 150%;
+    border: none;
     background-color: transparent;
-    border: none;
-    color: #0A3871;
-}
-.botaoTextArea {
-    padding: 5px;
-}
-.botaoTextArea .criptografar{
-    padding: 24px;
-    width: 328px;
-    height: 67px;
-    /* Dark blue/dark-blue-300 */
-    background: #0A3871;
-    border-radius: 24px;
-    cursor: pointer;
-    color: #FFFFFF;
-  
     
 }
-.botaoTextArea .descriptografar{
-    padding: 24px;
-    width: 328px;
-    height: 67px; 
-    /* Light gray */
-    background: #D8DFE8;
-    /* Dark blue/dark-blue-300 */
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    margin-left: 1%;
-    cursor: pointer;
-
-    
-}
-.botaoTextArea button:active{
-   transform: scale(0.9);
-    
-}
-
-.containerResultadoTexto{
-    background: #ffffff;
-    margin-top: 40px;
-    width: 400px;
-    height: 89%;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.resultadoVazio{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-.resultadoVazio div{
-    text-align: center;
-}
-.resultadoVazio .img{
-    margin-bottom: 32px;
-}
-.resultadoVazio .titulo{
-    display: flex;
+.copiar{
     width: 100%;
-    align-items: center;
     text-align: center;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    text-align: center;
-    color: #343A40;
-    margin-bottom: 16px;
-   
-}
-.resultadoVazio div p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: #495057;
-}
-
-.containerResultadoTexto.empy{
-    display: block;
-}
-#comResultado{
-    display: none;
-}
-.containerResultadoTexto.full{
-    display: flex;
-    justify-content: space-around;
+    height: 2rem;
     
-}
-
-.resultado{
-    background: #FFFFFF;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 32px;
-}
-.resultado .textoResultado{
-    resize: none;
-    height: 100%;
-    width: 100%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-    border: none;
-    color: #495057;
-}
-
-.resultadoTextoArea {
-    height: 80%;
-    width: 90%;
-
-
-
-
 }
 .copiar button{
-    width: 336px;
-    height: 67px;
-    box-sizing: border-box;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #0A3871;
-    cursor: pointer;
-
+    height: 2rem;
+    width: 100%;
 }
-.copiar button:active{
-    transform: scale(0.9);
-     
- }
+
+#comResultado{
+   display: none;
+}
 
 
- @media screen and (max-width: 1242px) {
+@media screen and (max-width: 1024px ) {
+ 
     .container{
         flex-direction: column;
-        align-items: center;
-        width: 100%;
     }
-    .containerTexto{
-  
+    .textInsert,.textArea{
         width: 100%;
-        margin-right: 0px;
-    }
-    .textArea{
         display: flex;
         justify-content: center;
     }
-    .botaoTextArea{
-        display:flex ;
-        justify-content: space-around;
-    }
-    .containerResultadoTexto{
+    .textInsert .textArea textarea{
         width: 80%;
-        height: 40%;
+        min-height: 300px;
     }
-    .resultadoVazio{
-        width: 100%;
-    }
+    
     .resultadoVazio .img{
         display: none;
     }
-    .resultadoVazio .titulo{
-        justify-content: center;
+    .container .containerResultadoTexto {
+        height: 20%;
     }
-    .copiar{
+    .containerResultadoTexto .resultadoVazio{
+        height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: center;
     }
-    .copiar button{
+    .container .containerResultadoTexto{
+        text-align: center;
+        height: 30%;
         width: 80%;
     }
- }
- @media screen and (max-width: 832px) {
-    
-    .botaoTextArea{
-        flex-direction: column;
-        align-items: center;
-    }
-    .botaoTextArea button{
-        margin: 10px;
-    }
 
- }
+}
+@media screen and (max-width: 1024px ) and (orientation: landscape)  {
+    .container{
+        flex-direction: row;
+        height: 100%;
+    }
+    .container .textInsert{
+        height: 100%;
+    }
+    .textInsert .textArea{
+        height: 100%;
+    }
+    .textInsert .textArea textarea{
+        height: 100%;
+    }
+    .container .textInsert .botaoTextArea{
+        display: flex;
+        height: 50%;
+    }
+    .textInsert .botaoTextArea button{
+        width: 50%;
+        height: 100%;
+    }
+    .textInsert .botaoTextArea button:last-child{
+        width: 50%;
+        height: 100%;
+    }
+    .container .containerResultadoTexto{
+        height: 90%;
+        margin: 10px;
+      
+    }
+    .container .containerResultadoTexto .resultadoVazio {
+        height: 100%;
+        
+    }
+}
